@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zaid Khan | Elite Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #6366f1, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .glass:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 20px 40px rgba(99,102,241,0.3);
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      z-index: -1;
+    }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="bg-gray-950 text-white overflow-x-hidden">
+
+<!-- Background -->
+<div class="circle w-[500px] h-[500px] bg-indigo-600 top-0 left-0"></div>
+<div class="circle w-[500px] h-[500px] bg-pink-500 bottom-0 right-0"></div>
+
+<!-- Navbar -->
+<nav class="fixed w-full z-50 glass">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-5 text-lg">
+    <h1 class="font-bold gradient-text text-2xl">Zaid Khan</h1>
+    <div class="space-x-6 hidden md:block">
+      <a href="#about" class="hover:text-pink-400">About</a>
+      <a href="#skills" class="hover:text-pink-400">Skills</a>
+      <a href="#projects" class="hover:text-pink-400">Projects</a>
+      <a href="#certifications" class="hover:text-pink-400">Certifications</a>
+      <a href="#contact" class="hover:text-pink-400">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+  <h1 class="text-6xl md:text-8xl font-bold leading-tight">
+    Hi, I'm <span class="gradient-text">Zaid Khan</span><br/>I Build <span class="gradient-text">Real Products</span>
+  </h1>
+
+  <p class="mt-6 text-xl md:text-2xl text-gray-300 max-w-3xl">
+    MERN Stack Developer & Data Analyst crafting scalable applications and turning data into insights.
+  </p>
+
+  <div class="mt-10 flex flex-wrap gap-6 justify-center">
+    <a href="#projects" class="px-10 py-4 bg-indigo-600 rounded-full text-lg hover:scale-110 transition">View My Work</a>
+    <a href="ZAIDKHAN_Resume_over.pdf" download class="px-10 py-4 border border-pink-400 rounded-full text-lg hover:bg-pink-500 transition">Download Resume</a>
+  </div>
+
+  <div class="mt-6">
+    <a href="mailto:zaidkhannn047@gmail.com" class="text-pink-400 text-lg underline">→ Contact Me Directly</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24 max-w-6xl mx-auto px-6">
+  <h2 class="text-5xl font-bold gradient-text mb-10">About Me</h2>
+
+  <p class="text-xl text-gray-300 leading-relaxed">
+    I’m Zaid Khan, a MERN Stack Developer and Data Analyst focused on building real-world, scalable applications.
+
+    <br/><br/>
+    I don’t just write code — I build products that solve problems.
+
+    <br/><br/>
+    From developing a full-stack coding platform with authentication and team collaboration, to analyzing 10,000+ data records to generate actionable insights, I combine development with analytical thinking.
+
+    <br/><br/>
+    I specialize in full-stack development, clean UI design, backend systems, and data-driven decision making.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-24 max-w-7xl mx-auto px-6">
+  <h2 class="text-5xl font-bold gradient-text mb-16">Skills</h2>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <div class="glass p-8 rounded-2xl">
+      <h3 class="text-2xl mb-4 text-indigo-400">Frontend</h3>
+      <div class="flex flex-wrap gap-3">
+        <span class="px-4 py-2 bg-gray-800 rounded-full">React</span>
+        <span class="px-4 py-2 bg-gray-800 rounded-full">HTML</span>
+        <span class="px-4 py-2 bg-gray-800 rounded-full">CSS</span>
+        <span class="px-4 py-2 bg-gray-800 rounded-full">Tailwind</span>
+      </div>
+    </div>
+
+    <div class="glass p-8 rounded-2xl">
+      <h3 class="text-2xl mb-4 text-pink-400">Backend</h3>
+      <div class="flex flex-wrap gap-3">
+        <span class="px-4 py-2 bg-gray-800 rounded-full">Node.js</span>
+        <span class="px-4 py-2 bg-gray-800 rounded-full">Express</span>
+        <span class="px-4 py-2 bg-gray-800 rounded-full">REST API</span>
+      </div>
+    </div>
+
+    <div class="glass p-8 rounded-2xl">
+      <h3 class="text-2xl mb-4 text-indigo-400">Database</h3>
+      <div class="flex flex-wrap gap-3">
+        <span class="px-4 py-2 bg-gray-800 rounded-full">MongoDB</span>
+        <span class="px-4 py-2 bg-gray-800 rounded-full">MySQL</span>
+      </div>
+    </div>
+
+    <div class="glass p-8 rounded-2xl">
+      <h3 class="text-2xl mb-4 text-pink-400">Data Analytics</h3>
+      <div class="flex flex-wrap gap-3">
+        <span class="px-4 py-2 bg-gray-800 rounded-full">Pandas</span>
+        <span class="px-4 py-2 bg-gray-800 rounded-full">NumPy</span>
+        <span class="px-4 py-2 bg-gray-800 rounded-full">Matplotlib</span>
+        <span class="px-4 py-2 bg-gray-800 rounded-full">EDA</span>
+      </div>
+    </div>
+
+    <div class="glass p-8 rounded-2xl">
+      <h3 class="text-2xl mb-4 text-indigo-400">Tools</h3>
+      <div class="flex flex-wrap gap-3">
+        <span class="px-4 py-2 bg-gray-800 rounded-full">Git</span>
+        <span class="px-4 py-2 bg-gray-800 rounded-full">GitHub</span>
+        <span class="px-4 py-2 bg-gray-800 rounded-full">Postman</span>
+        <span class="px-4 py-2 bg-gray-800 rounded-full">Jupyter</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-24 max-w-7xl mx-auto px-6">
+  <h2 class="text-5xl font-bold gradient-text mb-16">Projects</h2>
+
+  <div class="grid md:grid-cols-2 gap-12">
+
+    <div class="glass p-10 rounded-2xl">
+      <h3 class="text-3xl text-indigo-400 font-semibold">Code Marathon</h3>
+      <p class="mt-4 text-lg text-gray-300">Full-stack coding contest platform with authentication and team collaboration.</p>
+      <ul class="mt-6 text-gray-400 list-disc list-inside space-y-2">
+        <li>JWT Authentication</li>
+        <li>Team collaboration</li>
+        <li>Dashboards</li>
+      </ul>
+    </div>
+
+    <div class="glass p-10 rounded-2xl">
+      <h3 class="text-3xl text-pink-400 font-semibold">Cafe Sales Analysis</h3>
+      <p class="mt-4 text-lg text-gray-300">Analyzed 10k+ records to find trends and insights.</p>
+      <ul class="mt-6 text-gray-400 list-disc list-inside space-y-2">
+        <li>EDA</li>
+        <li>Visualization</li>
+        <li>Business insights</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="py-24 max-w-6xl mx-auto px-6">
+  <h2 class="text-5xl font-bold gradient-text mb-12">Certifications</h2>
+
+  <div class="space-y-8 text-xl">
+    <div class="glass p-6 rounded-xl">🏆 NPTEL – Python for Data Science</div>
+    <div class="glass p-6 rounded-xl">🏆 L&T Data Analyst Level 1 & 2</div>
+    <div class="glass p-6 rounded-xl">🏆 Leadership Certification</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 text-center">
+  <h2 class="text-5xl font-bold gradient-text mb-6">Let’s Build Something Together</h2>
+  <p class="text-xl text-gray-300">I typically respond within 24 hours.</p>
+
+  <div class="mt-10 flex justify-center gap-6 flex-wrap">
+    <a href="mailto:zaidkhannn047@gmail.com" class="px-10 py-4 bg-pink-500 rounded-full text-lg hover:scale-110 transition">Email Me</a>
+    <a href="https://github.com/zaidkhannn" target="_blank" class="px-10 py-4 border border-indigo-400 rounded-full text-lg hover:scale-110 transition">GitHub</a>
+    <a href="https://linkedin.com/in/zaid-khan-8aa501263" target="_blank" class="px-10 py-4 border border-indigo-400 rounded-full text-lg hover:scale-110 transition">LinkedIn</a>
+  </div>
+</section>
+
+<footer class="text-center py-6 text-gray-500">
+  © 2026 Zaid Khan 🚀
+</footer>
+
+</body>
+</html>
